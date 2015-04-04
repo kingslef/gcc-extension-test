@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
 #define is_equal(x, y)                                              \
     do {                                                            \
         if (__builtin_types_compatible_p(__typeof__ (x), char[]))   \
-            is_equal_string(x, y);                                  \
+            is_equal_string((const char *)x, (const char *)y);      \
         else if (__builtin_types_compatible_p(__typeof__ (x), int)) \
-            is_equal_int(x, y);                                     \
+            is_equal_int((int)(intptr_t)x, (int)(intptr_t)y);       \
     } while (0)
 
 void is_equal_string(const char * x, const char * y)
