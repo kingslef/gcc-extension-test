@@ -33,3 +33,4 @@ empty-struct
 forward-decl
 label-address
 nested-func
+extended-asm
