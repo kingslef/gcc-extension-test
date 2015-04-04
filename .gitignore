@@ -34,3 +34,5 @@ forward-decl
 label-address
 nested-func
 extended-asm
+case-range
+forward-enum

@@ -17,7 +17,7 @@ int main(void)
 {
     size_t len = 5;
     int arr[len][len];
-    memset(arr, 1, sizeof(arr));
+    memset(arr, -1, sizeof(arr));
 
     printf("outside of function: sizeof arr: %zu, arr[0]: %zu\n",
            sizeof(arr), sizeof(arr[0]));

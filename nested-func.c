@@ -5,13 +5,13 @@ int func(int a, int (**func_p)(int))
     /* declare with auto */
     auto int func2(int i);
 
+    *func_p = func2;
+
     int func2(int i)
     {
-        return i; // Could use variable a if function pointer from nested
-                  // wouldn't be used
+        // Could use variable a if this function wouldn't be used outside
+        return i + 1;
     }
-
-    *func_p = func2;
 
     return func2(5 + a);
 }

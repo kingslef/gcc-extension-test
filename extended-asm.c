@@ -3,7 +3,8 @@
 
 void get_rdtsc(unsigned int * restrict h, unsigned int * restrict l)
 {
-    __asm__ volatile("rdtsc" : "=a" (*l), "=d" (*h));
+    __asm__ volatile("rdtsc"
+                     : "=a" (*l), "=d" (*h));
 }
 
 int main(void)
