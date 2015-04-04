@@ -7,7 +7,7 @@ CFLAGS += -Wshadow -Wwrite-strings -Wconversion -Wstrict-aliasing=2 -Wunused-res
 
 TARGETS += builtin-args empty-struct forward-decl cleanup-attr local-label
 TARGETS += label-address nested-func extended-asm case-range forward-enum
-TARGETS += overload-func
+TARGETS += overload-func simd
 
 all: ${TARGETS}
 

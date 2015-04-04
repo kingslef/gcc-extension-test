@@ -23,11 +23,9 @@ void is_equal_int(int x, int y)
 
 int main(void)
 {
-    is_equal("foo", "foo");
-    is_equal("foo", "bar");
-
     is_equal(1, 1);
-    is_equal(2, 1);
+
+    is_equal("foo", "foo");
 
     return 0;
 }
