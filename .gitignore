@@ -37,3 +37,4 @@ extended-asm
 case-range
 forward-enum
 cleanup-attr
+local-label

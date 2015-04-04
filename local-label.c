@@ -13,6 +13,9 @@ int main(void)
         i++;
     }
 
+
+    goto label;
+
 label:
 
     printf("i is %d\n",
