@@ -36,3 +36,4 @@ nested-func
 extended-asm
 case-range
 forward-enum
+cleanup-attr
