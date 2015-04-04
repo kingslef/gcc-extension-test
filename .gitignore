@@ -38,3 +38,4 @@ case-range
 forward-enum
 cleanup-attr
 local-label
+overload-func
